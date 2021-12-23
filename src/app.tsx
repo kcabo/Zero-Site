@@ -3,10 +3,11 @@ import { Tweet } from './tweet';
 
 export function App() {
   return (
-    <>
+    <div>
       <header className='h-14 p-2 flex justify-center border-b border-gray-200'>
         <Logo />
       </header>
+
       <main className=''>
         <div className='px-4 py-6 container lg:max-w-screen-xl mx-auto space-y-6 mb-5'>
           <h1 className='text-4xl text-gray-700 font-black'>
@@ -86,6 +87,6 @@ export function App() {
           </span>
         </div>
       </footer>
-    </>
+    </div>
   );
 }
