@@ -4,20 +4,20 @@ import { Tweet } from './tweet';
 export function App() {
   return (
     <div>
-      <header className='h-14 p-2 flex justify-center border-b border-gray-200'>
+      <header className='h-14 py-2 flex justify-center border-b border-gray-200'>
         <Logo />
       </header>
 
       <main className=''>
         <div className='px-4 py-6 container lg:max-w-screen-xl mx-auto space-y-6 mb-5'>
-          <h1 className='text-4xl text-gray-700 font-black'>
+          <h1 className='text-3xl lg:text-4xl text-gray-700 font-black'>
             スイマーズゼロは
             <br className='md:hidden' />
             サービスを終了しました
           </h1>
 
           <div className='flex flex-col lg:flex-row'>
-            <div className='text-gray-700 space-y-3 leading-relaxed lg:text-lg lg:leading-loose'>
+            <div className='text-gray-700 space-y-3 leading-relaxed lg:text-lg lg:leading-relaxed'>
               <p>ご利用いただいた皆様へ</p>
               <p>
                 サービス開始後、皆様からたくさんの反響を頂けました。ありがとうございました。
@@ -27,7 +27,7 @@ export function App() {
                 優れた選手ではなくとも、自分のデータが可視化されたり、ランキングに載ったりできる。
                 サービスを通じて、日本全国の誰かをライバルにできる。
               </p>
-              <p>
+              <p className='font-bold'>
                 数字で戦う水泳という競技だからこそ、データの恩恵を普遍的に提供したい。
                 そしてどんなレベルの選手でも等しく水泳を楽しみ、アツくなれたらいい。
                 「全員、ランクイン。」という本サービスのキャッチコピーにはそんな思いが込められていました。
@@ -38,9 +38,11 @@ export function App() {
                 また、当サービスによりご迷惑をおかけした各所に深くお詫び申し上げます。
               </p>
               <p>さらなる水泳界の発展を願って。</p>
-              <p className='font-bold'>2021年12月23日 スイマーズゼロ開発者</p>
+              <p className='font-bold text-white bg-gray-700 w-fit px-2'>
+                2021年12月23日 スイマーズゼロ開発者
+              </p>
             </div>
-            <div className='flex-shrink-[0.7] lg:pt-16'>
+            <div className='flex-shrink-[0.7] pt-5 lg:pt-16'>
               <img src='/ogp.webp' alt='OGP' />
             </div>
           </div>
@@ -48,10 +50,14 @@ export function App() {
 
         <div className='space-y-5 py-8 bg-slate-100 px-2'>
           <h2 className='text-sky-500 text-3xl font-bold text-center'>
-            新しいサービスをリリースしました
+            新しいサービスを
+            <br className='md:hidden' />
+            リリースしました
           </h2>
           <p className='text-gray-800 text-lg text-center'>
-            スイマーズゼロとは全く異なる、新しい水泳向けサービスをリリースしました。
+            スイマーズゼロとは全く異なる、
+            <br className='md:hidden' />
+            新しい水泳向けサービスをリリースしました。
             <br />
             興味がございましたらぜひ御覧ください
           </p>
@@ -61,10 +67,9 @@ export function App() {
 
       <footer className='text-gray-600 border-t border-gray-200 '>
         <div className='container lg:max-w-screen-lg px-3 py-8 mx-auto flex items-center sm:flex-row flex-col'>
-          <a className='flex h-10 title-font font-medium items-center md:justify-start justify-center text-gray-900'>
+          <div className='h-10'>
             <Logo />
-            <span className='ml-3 text-xl font-black'>SWIMMERS ZERO</span>
-          </a>
+          </div>
           <p className='text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4'>
             © 2021 スイマーズゼロ
           </p>
